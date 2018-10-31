@@ -9,6 +9,6 @@
 | [angular-cli-dash-js](https://github.com/setrar/angular-cli-dash-js)          | dash.js running under @angular/cli       |             |
 | [angular-cli-hasplayer-js](https://github.com/setrar/angular-cli-hasplayer-js)| hasplayer.js running under @angular/cli  |             |
 | [angular-cli-shaka-player](https://github.com/setrar/angular-cli-shaka-player)| Shaka Player running under @angular/cli  |             |
-| [angular-cli-hls-js](https://github.com/setrar/angular-cli-hls-js)            | [hls.js](https://github.com/video-dev/hls.js) running under @angular/cli  | Working on all platforms using MSE, native on iOS            |
-|             | |  native on iOS            |
+| [angular-cli-hls-js](https://github.com/setrar/angular-cli-hls-js)            | [hls.js](https://github.com/video-dev/hls.js) running under @angular/cli  | Working on all platforms using MSE            |
+|             | |  hls native on iOS            |
 

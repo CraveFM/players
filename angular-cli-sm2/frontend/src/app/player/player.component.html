@@ -1,0 +1,19 @@
+
+<md-toolbar class="mat-accent">
+
+  <md-card>
+    <a  (click)="choose()"><i class="material-icons">file_download</i></a>
+    <a  (click)="play()"><i class="material-icons">play_arrow</i></a>
+    <a  (click)="stop()"><i class="material-icons">stop</i></a>
+  </md-card>
+
+</md-toolbar>
+
+<button (click)="detectBrowser()">
+    <i class="material-icons">works</i>Browser Information
+  </button>
+
+  <md-card>
+    {{browser}}
+  </md-card>
+

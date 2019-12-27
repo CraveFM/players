@@ -3,10 +3,10 @@
 |    Projects                                         | Description                              |  Comments   |
 |:----------------------------------------------------|:-----------------------------------------|:------------| 
 | [angular-cli-dash-js](angular-cli-dash-js)          | dash.js running under @angular/cli       |             |
-| [audioPlayer](audioPlayer)                          | Scala Audio Player                       |             |
-| [scalaFX-html5-audio](scalaFX-html5-audio)          | ScalaFX HTML5 Audio Player               |             |
 | [angular-cli-sm2](angular-cli-sm2)                  | SoundManager2 running under @angular/cli |             |
 | [angular-cli-soundcloud](angular-cli-soundcloud)    | SoundCloud running under @angular/cli    |             |
+| [audioPlayer](audioPlayer)                          | Scala Audio Player                       |             |
+| [scalaFX-html5-audio](scalaFX-html5-audio)          | ScalaFX HTML5 Audio Player               |             |
 |                                                     |                                          |             |
 | [angular-cli-hasplayer-js](https://github.com/setrar/angular-cli-hasplayer-js)| hasplayer.js running under @angular/cli  |             |
 | [angular-cli-shaka-player](https://github.com/setrar/angular-cli-shaka-player)| Shaka Player running under @angular/cli  |             |

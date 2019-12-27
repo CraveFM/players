@@ -10,7 +10,7 @@
 | [angular-cli-soundcloud](angular-cli-soundcloud)    | SoundCloud running under @angular/cli    |             |
 | [audioPlayer](audioPlayer)                          | Scala Audio Player                       |             |
 | [scalaFX-html5-audio](scalaFX-html5-audio)          | ScalaFX HTML5 Audio Player               |             |
+| [nativescript-exoplayer](nativescript-exoplayer)    | nativescript [exoplayer](https://exoplayer.dev/) example                                | Trying native HLS      |
 |                                                     |                                          |             |
 | [videogular2-showroom](https://github.com/setrar/videogular2-showroom)        | Videogular2 Player running under @angular/cli  |             |
-| [nativescript-exoplayer](https://github.com/setrar/nativescript-exoplayer)    | nativescript [exoplayer](https://exoplayer.dev/) example                                | Trying native HLS      |
 

@@ -2,9 +2,7 @@
 
 # Install
 
-:pushpin: Install `MP4Box`
-
-https://formulae.brew.sh/formula/gpac
+:pushpin: Install [`MP4Box`](https://formulae.brew.sh/formula/gpac)
 
 :bulb: Test if installed
 
@@ -17,7 +15,7 @@ Not installed
 % brew install gpac
 ```
 
-:pushpin: Install `ffmpeg`
+:pushpin: Install [`ffmpeg`](https://formulae.brew.sh/formula/ffmpeg)
 
 ```
 % brew install ffmpeg

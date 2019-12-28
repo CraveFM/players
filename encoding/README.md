@@ -26,6 +26,7 @@ Not installed
 # Roll
 
 
-|:hash:| Platform               | Native Dash        | Native Hls         | Dash               | Hls                |
-|------|------------------------|--------------------|--------------------|--------------------|--------------------|
-| 01   | Desktop/Chrome         | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+|:hash:| Platform               | Raw Dash           | [Raw Hls](script/player-raw-hls.html) | Dash               | Hls                |
+|------|------------------------|--------------------|---------------------------------------|--------------------|--------------------|
+| 01   | Desktop/Chrome         | :heavy_check_mark: | :heavy_check_mark:                    | :heavy_check_mark: | :heavy_check_mark: |
+| 02   | Desktop/Safari         | :x:                | :heavy_check_mark:                    | :heavy_check_mark: | :heavy_check_mark: |

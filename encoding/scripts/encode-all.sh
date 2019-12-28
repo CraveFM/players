@@ -21,7 +21,7 @@ for SONG in "${SONGS[@]}"; do
    # DASH section only
 
    mkdir ${STREAM_FOLDER}/dash/${SONG}
-   MP4Box -dash 4000 -frag 4000 -rap -segment-name segment_ ${OUTPUT_FOLDER}/${SONG}.mp4#audio -out ${STREAM_FOLDER}/dash/${SONG}/.mpd
+   MP4Box -dash 4000 -frag 4000 -rap -segment-name segment_ ${OUTPUT_FOLDER}/${SONG}.mp4#audio -out ${STREAM_FOLDER}/dash/${SONG}/${SONG}.mpd
 
    # HLS section only
    # HLS is native on Safari but for some reasons ther file name is needed when using the .m3u8 extension

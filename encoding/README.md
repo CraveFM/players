@@ -26,6 +26,6 @@ Not installed
 # Roll
 
 
-|:hash:| :Platform:             | Native             | Dash               | Hls                |
+|:hash:| Platform               | Native             | Dash               | Hls                |
 |------|------------------------|--------------------|--------------------|--------------------|
 | 01   | Desktop/Chrome         | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |

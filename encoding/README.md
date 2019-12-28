@@ -26,7 +26,13 @@ Not installed
 # Roll
 
 
-|:hash:| Platform               | [Raw Dash](scripts/player-raw-dash.html) | [Raw Hls](scripts/player-raw-hls.html) | Dash               | Hls                |
-|------|------------------------|--------------------|---------------------------------------|--------------------|--------------------|
-| 01   | Desktop/Chrome         | :heavy_check_mark: | :heavy_check_mark:                    | :heavy_check_mark: | :heavy_check_mark: |
-| 02   | Desktop/Safari         | :x:                | :heavy_check_mark:                    | :heavy_check_mark: | :heavy_check_mark: |
+|:hash:| Platform        | [Raw Dash](scripts/raw-dash.html) | [Raw Hls](scripts/raw-hls.html) | [MES Dash](scripts/mes-dash.html)| [MES Hls](scripts/mes-hls.html) |
+|------|-----------------|-----------------------------------|---------------------------------|----------------------------------------|---------------------------------|
+| 01   | Desktop/Chrome  | :x:                               | :heavy_check_mark:              | :heavy_check_mark: | :heavy_check_mark: |
+| 02   | Desktop/Safari  | :x:                | :heavy_check_mark:                    | :heavy_check_mark: | :heavy_check_mark: |
+
+# References:
+
+MES: Media Source Extension
+
+https://caniuse.com/#feat=mediasource

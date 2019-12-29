@@ -29,8 +29,8 @@ Not installed
 |:hash:| Platform        | [Raw Dash](scripts/raw-dash.html) | [Raw Hls](scripts/raw-hls.html) | [MES Dash](scripts/mes-dash.html)| [MES Hls](scripts/mes-hls.html) |
 |------|-----------------|-----------------------------------|---------------------------------|----------------------------------------|---------------------------------|
 | 01   | Desktop/Chrome  | :x:                               | :x:                             | :heavy_check_mark: | :heavy_check_mark:  :movie_camera: |
-| 02   | Desktop/Safari  | :x:                               | :heavy_check_mark: :sound:              | :heavy_check_mark: | :x: |
-| 03   | Mobile/Safari   | :x:                               | :heavy_check_mark: :sound:              | :heavy_check_mark: | :heavy_check_mark:  :movie_camera: |
+| 02   | Desktop/Safari  | :x:                               | :heavy_check_mark: :sound:        | :heavy_check_mark: | :x: |
+| 03   | Mobile/Safari   | :x:                               | :heavy_check_mark: :movie_camera: | :heavy_check_mark: | :heavy_check_mark:  :movie_camera: |
 
 # References:
 

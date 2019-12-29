@@ -148,6 +148,7 @@ Add new policy to allow streaming
 
     % mc policy links raspberrypi/stream --recursive 
     http://192.168.1.10:9000/stream/dash/TIAr0000000196Al0000000001So0000006243/TIAr0000000196Al0000000001So0000006243.mpd
+    ...
 
 ## Some important Stuff
 

@@ -49,8 +49,9 @@ http://<IP>:8000
 
 |:hash:| Platform        | [Raw Dash](scripts/raw-dash.html) | [Raw Hls](scripts/raw-hls.html) | [MES Dash](scripts/mes-dash.html)| [MES Hls](scripts/mes-hls.html) |
 |------|-----------------|-----------------------------------|---------------------------------|----------------------------------------|---------------------------------|
-| 01   | Desktop/Chrome  | :x:                               | :x:                             | :heavy_check_mark: | :heavy_check_mark:  :movie_camera: |
+| 01   | Desktop/Chrome  | :x:                               | :x:                             | :heavy_check_mark: :sound: | :heavy_check_mark:  :movie_camera: |
 | 02   | Desktop/Safari  | :x:                               | :heavy_check_mark: :sound:        | :heavy_check_mark: :sound: | :x: |
+| 01   | Desktop/Chrome  | :x:                               | :x:                             | :heavy_check_mark: :sound: | :heavy_check_mark:  :sound: |
 | 03   | iOS/Safari      | :x:                               | :heavy_check_mark: :movie_camera: | :x: | :heavy_check_mark:  :movie_camera: |
 | 04   | Android/Chrome  | :x:                               | :x: | :heavy_check_mark: :sound: | :x:   |
 

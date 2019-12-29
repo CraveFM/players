@@ -66,8 +66,8 @@ This tutorial has been tested with Minio revision 2019-10-02T21-19-38Z. Later re
 The binary is no inside the folder `/home/pi/go/bin`.
     
     $ ls -l ~/go/bin
-    insgesamt 36680
-    -rwxr-xr-x 1 pi pi 37617664 Okt  5 11:16 minio
+    total 36680
+    -rwxr-xr-x 1 pi pi 37617664 Dec 29 12:47 minio
 
 Create a folder for the objects and buckets.
 

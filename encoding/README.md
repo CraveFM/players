@@ -1,6 +1,6 @@
 # Encoding 
 
-# Install
+## :one: Install
 
 :pushpin: Install [`MP4Box`](https://formulae.brew.sh/formula/gpac)
 
@@ -23,7 +23,21 @@ Not installed
 
 
 
-# Roll
+# :two: Roll
+
+* go to `scripts` folder and generate the streaming files that will be located under `stream` folder
+
+```
+$ cd scripts; sh encode-all.sh
+```
+
+
+* Run the python server
+
+```
+$ python PythonServer.py
+```
+
 
 
 |:hash:| Platform        | [Raw Dash](scripts/raw-dash.html) | [Raw Hls](scripts/raw-hls.html) | [MES Dash](scripts/mes-dash.html)| [MES Hls](scripts/mes-hls.html) |

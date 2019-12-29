@@ -2,126 +2,9 @@
 
 The Raspberry Pi 4 Model B single board computer from the [Raspberry Pi Foundation](https://www.raspberrypi.org) has a 1.5 GHz quad-core ARMv8 CPU, 1 to 4 GByte main memory and a Gigabit Ethernet interface. 
 
-![Front of the Raspberry Pi 4 Model B single board computer](images/RPi4_front.jpg)
-![Back of the Raspberry Pi 4 Model B single board computer](images/RPi4_back.jpg)
-
 This installation tutorial explains the installation of a Raspberry Pi 4 device from scratch and the configuration of [s3cmd](http://s3tools.org) on your computer. 
 
 _This implies that you have already an installation of `s3cmd` on the system you want to use for the interaction with the Minio storage service._
-
-## Fetch and decompress the operating system image
-
-    $ wget http://downloads.raspberrypi.org/raspbian_lite/images/raspbian_lite-2019-09-30/2019-09-26-raspbian-buster-lite.zip
-    $ unzip 2019-09-26-raspbian-buster-lite.zip 
-    Archive:  2019-09-26-raspbian-buster-lite.zip
-      inflating: 2019-09-26-raspbian-buster-lite.img
-
-    $ lsblk | grep mm
-    mmcblk0     179:0    0  29,8G  0 disk 
-    └─mmcblk0p1 179:1    0  29,8G  0 part 
-
-## Write the image on a local micro SD card
-
-Check which one is the correct device! If you use an internal card reader, it is often `/dev/mmcblk0`.
-
-    $ sudo dd bs=4M if=2019-09-26-raspbian-buster-lite.img of=/dev/mmcblk0 status=progress
-    $ sudo sync
-
-Default login of this image is `pi/raspberry`. To become user root, execute `sudo su`.
-
-Older Raspian versions started the SSH server by default. Because of security reasons (as explained [here](https://www.raspberrypi.org/blog/a-security-update-for-raspbian-pixel/)), all Raspbian versions since version 2016-11-25 (see the [release notes](http://downloads.raspberrypi.org/raspbian/release_notes.txt)) have the SSH server disabled by default. To get the SSH server automatically activated during boot time, create a file `ssh` with any content (or just an empty file) inside the boot partition (it is the first partition) of the micro SD card.
-
-    $ lsblk | grep mm
-    mmcblk0     179:0    0  29,8G  0 disk 
-    ├─mmcblk0p1 179:1    0   256M  0 part 
-    └─mmcblk0p2 179:2    0   1,9G  0 part 
-
-    $ sudo mount /dev/mmcblk0p1 /media/
-
-    $ df | grep mm
-    /dev/mmcblk0p1    258095     53032    205064   21% /media
-
-    $ sudo touch /media/ssh
-    $ sync
-    $ sudo umount /media
-
-## Start the Raspberry Pi Computer
-
-The Raspbian operating system will try to fetch network configuration by using DHCP on the Ethernet interface per default. 
-
-If DHCP is not the desired solution, you may want to specify a static IP address for the single board computer. Leave the file `/etc/network/interfaces` at its default, because since Debian 9 (Stretch) it effectively does nothing. Instead, modify the file `/media/etc/dhcpcd.conf`.
-
-    $ sudo mount /dev/mmcblk0p2 /media/
-
-    $ sudo joe /media/etc/dhcpcd.conf
-
-Insert these lines:
-
-    # Static address, routes and dns
-    interface eth0
-    static ip_address=10.0.2.1/16
-    static routers=10.0.0.1
-    static domain_name_servers=10.0.0.1
-
-    $ sudo umount /media
-    $ sync
-
-Insert the micro SD card into the Raspberry Pi computer, connect it with the Ethernet cable and the micro USB cable for power supply and switch on the power supply. The operating system will try to fetch network configuration by using DHCP on the Ethernet interface per default. If you activated the SSH server, you can now log in via SSH.
-    
-
-## Expand the File System to make use of the entire Capacity of the micro SD Card
-
-After you logged into the single boad computer with SSH, you can now configure the computer with the `raspi-config` tool.
-
-    $ sudo raspi-config
-
-![Expand the file system with raspi-config](images/Raspbian_Buster_expand_FS1.png)
-![Expand the file system with raspi-config](images/Raspbian_Buster_expand_FS2.png)
-
-## Reduce the amount of memory for the GPU
-
-_This is not required for running Minio, but the Raspberry Pi 3 has just 1 GB of main memory which is not much at all and there is no need to waste 48 MB._
-
-A part of the main memory (just 1 GB) is assigned to the GPU. A pure server does not need a GPU at all. The share can me specified via the `raspi-config` tool. The minimum value is 16 MB, which is more useful compared with the dafault value (64 MB).
-
-![Specify the memory split with raspi-config](images/Raspbian_Buster_memory_split1.png)
-![Specify the memory split with raspi-config](images/Raspbian_Buster_memory_split2.png)
-
-After the new value is specified and after a reboot, the new value should be visible:
-
-    $ vcgencmd get_mem gpu
-    gpu=16M
-
-## Configure the Time Zone
-
-_This is not required for running Minio, but it is always useful to configure the operating system properly_
-
-    $ sudo dpkg-reconfigure tzdata
-    $ cat /etc/timezone
-    Europe/Berlin
-
-It is also possible to specify the time zone via the `raspi-config` tool.
-    
-## Predictable network interface names
-    
-It is more handy to have network names like `eth0` in Raspbian. Use the `raspi-config` tool.
-    
-![Specify the memory split with raspi-config](images/Raspbian_Buster_predictable_network_names1.png)
-![Specify the memory split with raspi-config](images/Raspbian_Buster_predictable_network_names2.png)
-![Specify the memory split with raspi-config](images/Raspbian_Buster_predictable_network_names3.png)
-
-Reboot the system.
-
-## Check the system    
-
-    $ uname -a
-    Linux raspberrypi 4.19.75-v7+ #1270 SMP Tue Sep 24 18:45:11 BST 2019 armv7l GNU/Linux
-    $ ip -4 addr show | grep global
-        inet 10.0.2.1/16 brd 10.0.255.255 scope global noprefixroute eth0
-
-
-
-
 
 ## Configure NTP to have the correct Time on the Raspberry Pi Computer
 
@@ -156,12 +39,6 @@ Check the time and date:
 
     $ date -R
     Sat, 05 Oct 2019 15:18:36 +0200
-
-## Install some packages
-
-They are not required for the installation of Minio, but just nice to have.
-
-    $ sudo apt-get install -y curl htop joe nmap git 
 
 ## Install Go
 

@@ -100,6 +100,10 @@ Minio provides a handy web user interface.
     
 ## Configure the `~/.s3cfg` file to make `s3cmd` working with Minio
 
+Install `s3cmd` using `Homebrew` package manager
+
+    $ brew install s3cmd
+
 All required steps are described here: [https://docs.minio.io/docs/s3cmd-with-minio](https://docs.minio.io/docs/s3cmd-with-minio)
 
 Just these lines need to be modified:

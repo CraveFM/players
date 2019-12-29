@@ -35,7 +35,7 @@ Not installed
 
 MES: Media Source Extension
 
-### <sup>audio</sup>
-### <sup>video</sup>
+### :sound: <sup>audio only</sup>
+### :movie_camera: <sup>audio/video</sup> 
 
 https://caniuse.com/#feat=mediasource

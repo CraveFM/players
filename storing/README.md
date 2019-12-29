@@ -131,6 +131,22 @@ Now s3cmd should work properly with the Minio service.
 Add files
 
     $ s3cmd put dash s3://stream --recursive
+    
+    
+## Minio Client
+
+* Install minio-client
+
+    $ brew install minio/stable/mc
+    
+* Add a new minio configuration
+    
+    $ mc config host add raspberrypi http://192.168.1.10:9000 KYNUR02NE46743GT0JDT rN3cV4o+NclcDSf+IjBCgFoaAonF86TDOem81zMg
+    
+* Add new policy to allow streaming
+
+    % mc policy links raspberrypi/stream --recursive 
+    http://192.168.1.10:9000/stream/dash/TIAr0000000196Al0000000001So0000006243/TIAr0000000196Al0000000001So0000006243.mpd
 
 ## Some important Stuff
 

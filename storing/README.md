@@ -127,6 +127,10 @@ Now s3cmd should work properly with the Minio service.
 
     $ s3cmd mb s3://TESTBUCKET
     ERROR: S3 error: 400 (InvalidBucketName): The specified bucket is not valid.
+    
+Add files
+
+    $ s3cmd put dash s3://stream --recursive
 
 ## Some important Stuff
 

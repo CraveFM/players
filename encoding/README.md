@@ -39,6 +39,13 @@ $ python PythonServer.py
 ```
 
 
+* Test using the below URL where IP is your host i.e. `localhost` or `192.168.1.100`
+
+```
+http://<IP>:8000
+```
+
+*  select any of these html files
 
 |:hash:| Platform        | [Raw Dash](scripts/raw-dash.html) | [Raw Hls](scripts/raw-hls.html) | [MES Dash](scripts/mes-dash.html)| [MES Hls](scripts/mes-hls.html) |
 |------|-----------------|-----------------------------------|---------------------------------|----------------------------------------|---------------------------------|

@@ -15,24 +15,19 @@ _This is not required for running Minio, but it is always useful to have the cor
 Now the time sould be synchronized with several NTP servers.
 
     $ ntpq -p
-        remote           refid      st t when poll reach   delay   offset  jitter
+         remote           refid      st t when poll reach   delay   offset  jitter
     ==============================================================================
-    0.debian.pool.n .POOL.          16 p    -   64    0    0.000    0.000   0.002
-    1.debian.pool.n .POOL.          16 p    -   64    0    0.000    0.000   0.002
-    2.debian.pool.n .POOL.          16 p    -   64    0    0.000    0.000   0.002
-    3.debian.pool.n .POOL.          16 p    -   64    0    0.000    0.000   0.002
-    213.251.53.187  193.0.0.229      2 u    2   64    1    7.757   -1.185   0.023
-    nbg01.muxx.net  40.33.41.76      2 u    2   64    1   10.579   -0.898   0.028
-    stratum2-1.NTP. 129.70.130.71    2 u    1   64    1   17.376    0.563   0.258
-    x8d1ee404.agdsn 193.175.73.151   2 u    2   64    1   22.135   -0.846   0.062
-    ntp.informatik. 124.216.164.14   2 u    1   64    1   16.043   -0.785   0.297
-    kabel.akku.expr .DCFa.           1 u    1   64    1   26.807   -3.012   0.002
-    cluster002.lino 130.149.17.21    2 u    2   64    1   11.572   -3.866   0.088
-    mail.masters-of 131.211.8.244    2 u    1   64    1   11.611   -1.134   0.002
-    y.ns.gin.ntt.ne 249.224.99.213   2 u    2   64    1   19.203   -6.312   0.176
-    golf.zq1.de     205.46.178.169   2 u    1   64    1   12.154   -0.693   0.077
-    bo.leptonics.co 187.182.182.166  3 u    1   64    1   12.197   -1.253   0.002
-    tom.linocomm.ne 130.149.17.21    2 u    1   64    1   12.793   -1.525   0.002
+     0.debian.pool.n .POOL.          16 p    -   64    0    0.000    0.000   0.001
+     1.debian.pool.n .POOL.          16 p    -   64    0    0.000    0.000   0.001
+     2.debian.pool.n .POOL.          16 p    -   64    0    0.000    0.000   0.001
+     3.debian.pool.n .POOL.          16 p    -   64    0    0.000    0.000   0.001
+    +draco.spiderspa 213.251.128.249  2 u 1002 1024  377   39.409   -0.676   0.418
+    *68-69-221-61.nb .ROSS.           1 u   68 1024  377   42.473   -0.495   0.713
+    -162.159.200.1   10.29.8.91       3 u  842 1024  377    7.850    0.343   3.070
+    +portal.switch.c 213.251.128.249  2 u  634 1024  377   40.174   -0.499   0.297
+    -162.159.200.123 10.29.8.91       3 u  611 1024  377    7.699    0.281   6.656
+    +ns5.pra.rip     137.183.22.172   3 u  610 1024  377   40.501   -0.308   0.311
+
 
 
 Check the time and date:

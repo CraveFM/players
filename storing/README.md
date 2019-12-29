@@ -35,6 +35,13 @@ Check the time and date:
     $ date -R
     Sat, 05 Oct 2019 15:18:36 +0200
 
+## Installation
+
+| Type                        | Comments |
+|-----------------------------|----------|
+| [Manual](install/manual.md) |          |
+| [Docker](install/docker.md) |          |
+
 
 
 Minio provides a handy web user interface.

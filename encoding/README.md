@@ -30,6 +30,7 @@ Not installed
 |------|-----------------|-----------------------------------|---------------------------------|----------------------------------------|---------------------------------|
 | 01   | Desktop/Chrome  | :x:                               | :x:                             | :heavy_check_mark: | :heavy_check_mark:  :movie_camera: |
 | 02   | Desktop/Safari  | :x:                               | :heavy_check_mark: :sound:              | :heavy_check_mark: | :x: |
+| 03   | Mobile/Safari   | :x:                               | :heavy_check_mark: :sound:              | :heavy_check_mark: | :heavy_check_mark:  :movie_camera: |
 
 # References:
 

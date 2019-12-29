@@ -35,4 +35,7 @@ Not installed
 
 MES: Media Source Extension
 
+### <sup>audio</sup>
+### <sup>video</sup>
+
 https://caniuse.com/#feat=mediasource

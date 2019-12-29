@@ -1,6 +1,6 @@
-# Minio on a Raspberry Pi 3 with Raspbian (Debian Jessie 8.0)
+# Minio on a Raspberry Pi 4 with Raspbian (Debian Buster 10.0)
 
-The Raspberry Pi 3 Model B+ single board computer from the [Raspberry Pi Foundation](https://www.raspberrypi.org) has a 1.4 GHz quad-core ARMv8 CPU, 1 GByte main memory and a Gigabit Ethernet interface. 
+The Raspberry Pi 4 Model B single board computer from the [Raspberry Pi Foundation](https://www.raspberrypi.org) has a 1.4 GHz quad-core ARMv8 CPU, 1 GByte main memory and a Gigabit Ethernet interface. 
 
 ![Front of the Raspberry Pi 3 Model B+ single board computer](images/RPi3plus_front.jpg)
 ![Back of the Raspberry Pi 3 Model B+ single board computer](images/RPi3plus_back.jpg)

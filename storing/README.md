@@ -76,23 +76,22 @@ Create a folder for the objects and buckets.
 Start Minio.
 
     $ ~/go/bin/minio server ~/minio-data/
-
-    Endpoint:  http://10.0.2.1:9000  http://127.0.0.1:9000    
-    AccessKey: RZ26HANXN6EHUSX3LYKE 
-    SecretKey: TuhruFQNumkC9eZcriXbWhKzvDf2d+BSDJU5AMz6 
+    Endpoint:  http://192.168.1.10:9000  http://10.8.0.1:9000  http://172.17.0.1:9000  http://172.18.0.1:9000  http://127.0.0.1:9000      
+    AccessKey: KYNUR02NE46743GT0JDT 
+    SecretKey: rN3cV4o+NclcDSf+IjBCgFoaAonF86TDOem81zMg 
 
     Browser Access:
-    http://10.0.2.1:9000  http://127.0.0.1:9000    
+       http://192.168.1.10:9000  http://10.8.0.1:9000  http://172.17.0.1:9000  http://172.18.0.1:9000  http://127.0.0.1:9000      
 
     Command-line Access: https://docs.min.io/docs/minio-client-quickstart-guide
-    $ mc config host add myminio http://10.0.2.1:9000 RZ26HANXN6EHUSX3LYKE TuhruFQNumkC9eZcriXbWhKzvDf2d+BSDJU5AMz6
+       $ mc config host add myminio http://192.168.1.10:9000 KYNUR02NE46743GT0JDT rN3cV4o+NclcDSf+IjBCgFoaAonF86TDOem81zMg
 
     Object API (Amazon S3 compatible):
-    Go:         https://docs.min.io/docs/golang-client-quickstart-guide
-    Java:       https://docs.min.io/docs/java-client-quickstart-guide
-    Python:     https://docs.min.io/docs/python-client-quickstart-guide
-    JavaScript: https://docs.min.io/docs/javascript-client-quickstart-guide
-    .NET:       https://docs.min.io/docs/dotnet-client-quickstart-guide
+       Go:         https://docs.min.io/docs/golang-client-quickstart-guide
+       Java:       https://docs.min.io/docs/java-client-quickstart-guide
+       Python:     https://docs.min.io/docs/python-client-quickstart-guide
+       JavaScript: https://docs.min.io/docs/javascript-client-quickstart-guide
+       .NET:       https://docs.min.io/docs/dotnet-client-quickstart-guide
 
 
 Minio provides a handy web user interface.

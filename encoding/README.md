@@ -51,9 +51,9 @@ http://<IP>:8000
 |------|-----------------|-----------------------------------|---------------------------------|----------------------------------------|---------------------------------|
 | 01   | Desktop/Chrome  | :x:                               | :x:                             | :heavy_check_mark: :sound: | :heavy_check_mark:  :movie_camera: |
 | 02   | Desktop/Safari  | :x:                               | :heavy_check_mark: :sound:        | :heavy_check_mark: :sound: | :x: |
-| 01   | Desktop/Chrome  | :x:                               | :x:                             | :heavy_check_mark: :sound: | :heavy_check_mark:  :sound: |
-| 03   | iOS/Safari      | :x:                               | :heavy_check_mark: :movie_camera: | :x: | :heavy_check_mark:  :movie_camera: |
-| 04   | Android/Chrome  | :x:                               | :x: | :heavy_check_mark: :sound: | :x:   |
+| 03   | Desktop/Firefox | :x:                               | :x:                             | :heavy_check_mark: :sound: | :heavy_check_mark:  :sound: |
+| 04   | iOS/Safari      | :x:                               | :heavy_check_mark: :movie_camera: | :x: | :heavy_check_mark:  :movie_camera: |
+| 05   | Android/Chrome  | :x:                               | :x: | :heavy_check_mark: :sound: | :x:   |
 
 # References:
 

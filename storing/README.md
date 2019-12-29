@@ -100,14 +100,18 @@ Minio provides a handy web user interface.
     
 ## Configure the `~/.s3cfg` file to make `s3cmd` working with Minio
 
+Install `s3cmd` using `Homebrew` package manager
+
+    $ brew install s3cmd
+
 All required steps are described here: [https://docs.minio.io/docs/s3cmd-with-minio](https://docs.minio.io/docs/s3cmd-with-minio)
 
 Just these lines need to be modified:
 
-    access_key = RZ26HANXN6EHUSX3LYKE
-    host_base = <the_ip_of_your_raspberry>:9000
-    host_bucket = <the_ip_of_your_raspberry>:9000
-    secret_key = TuhruFQNumkC9eZcriXbWhKzvDf2d+BSDJU5AMz6
+    access_key = KYNUR02NE46743GT0JDT
+    secret_key = rN3cV4o+NclcDSf+IjBCgFoaAonF86TDOem81zMg
+    host_base = 192.168.1.10:9000
+    host_bucket = 192.168.1.10:9000
     bucket_location = us-east-1
     use_https = False
     signature_v2 = False
@@ -116,13 +120,34 @@ Now s3cmd should work properly with the Minio service.
 
     $ s3cmd mb s3://testbucket
     Bucket 's3://testbucket/' created
-    bnc@olymp-x270:~$ s3cmd ls
-    2019-10-05 13:49  s3://testbucket
+    $ s3cmd ls
+    2019-12-29 18:12  s3://testbucket
 
 **Important !!!** When using `s3cmd` together with Minio, the buckets names must not contain capital letters. Otherwise you will just get this error message:
 
     $ s3cmd mb s3://TESTBUCKET
     ERROR: S3 error: 400 (InvalidBucketName): The specified bucket is not valid.
+    
+Add files
+
+    $ s3cmd put dash s3://stream --recursive
+    
+    
+## Minio Client
+
+Install minio-client
+
+    $ brew install minio/stable/mc
+    
+Add a new minio configuration
+
+
+    $ mc config host add raspberrypi http://192.168.1.10:9000 KYNUR02NE46743GT0JDT rN3cV4o+NclcDSf+IjBCgFoaAonF86TDOem81zMg
+    
+Add new policy to allow streaming
+
+    % mc policy links raspberrypi/stream --recursive 
+    http://192.168.1.10:9000/stream/dash/TIAr0000000196Al0000000001So0000006243/TIAr0000000196Al0000000001So0000006243.mpd
 
 ## Some important Stuff
 

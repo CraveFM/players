@@ -1,11 +1,11 @@
 # Minio on a Raspberry Pi 4 with Raspbian (Debian Buster 10.0)
 
-The Raspberry Pi 4 Model B single board computer from the [Raspberry Pi Foundation](https://www.raspberrypi.org) has a 1.4 GHz quad-core ARMv8 CPU, 1 GByte main memory and a Gigabit Ethernet interface. 
+The Raspberry Pi 4 Model B single board computer from the [Raspberry Pi Foundation](https://www.raspberrypi.org) has a 1.5 GHz quad-core ARMv8 CPU, 1 to 4 GByte main memory and a Gigabit Ethernet interface. 
 
-![Front of the Raspberry Pi 3 Model B+ single board computer](images/RPi3plus_front.jpg)
-![Back of the Raspberry Pi 3 Model B+ single board computer](images/RPi3plus_back.jpg)
+![Front of the Raspberry Pi 4 Model B single board computer](images/RPi4_front.jpg)
+![Back of the Raspberry Pi 4 Model B single board computer](images/RPi4_back.jpg)
 
-This installation tutorial explains the installation of a Raspberry Pi 3 device from scratch and the configuration of [s3cmd](http://s3tools.org) on your computer. 
+This installation tutorial explains the installation of a Raspberry Pi 4 device from scratch and the configuration of [s3cmd](http://s3tools.org) on your computer. 
 
 _This implies that you have already an installation of `s3cmd` on the system you want to use for the interaction with the Minio storage service._
 

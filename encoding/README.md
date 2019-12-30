@@ -64,3 +64,8 @@ MES: Media Source Extension
 ### :movie_camera: <sup>audio/video</sup> 
 
 https://caniuse.com/#feat=mediasource
+
+
+## Documentation to read
+
+https://docs.peer5.com/guides/production-ready-hls-vod/

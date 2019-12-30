@@ -69,3 +69,6 @@ https://caniuse.com/#feat=mediasource
 ## Documentation to read
 
 https://docs.peer5.com/guides/production-ready-hls-vod/
+
+
+https://www.exoscale.com/syslog/self-hosted-videos/

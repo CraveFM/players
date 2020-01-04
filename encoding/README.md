@@ -72,3 +72,5 @@ https://docs.peer5.com/guides/production-ready-hls-vod/
 
 
 https://www.exoscale.com/syslog/self-hosted-videos/
+
+https://askubuntu.com/questions/226773/how-to-read-mp3-tags-in-shell

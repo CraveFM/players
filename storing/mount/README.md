@@ -2,10 +2,9 @@
 
 https://www.raspberrypi.org/documentation/configuration/external-storage.md
 
-:one: Plug the device into the USB port
 
 
-:two: List all disks
+:one: List all disks
 
 :pushpin: Before
 
@@ -17,7 +16,9 @@ UUID                                 NAME        FSTYPE  SIZE MOUNTPOINT LABEL  
 3122c401-b3c6-4d27-8e0d-6708a7613aed └─mmcblk0p2 ext4   14.6G /          rootfs 
 ```
 
-:pushpin: After
+:two: Plug the device into the USB port
+
+:pushpin: After (i.e. `sda`)
 
 ```
 $ sudo lsblk -o UUID,NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL,MODEL
@@ -29,8 +30,22 @@ UUID                                 NAME        FSTYPE  SIZE MOUNTPOINT LABEL  
 3122c401-b3c6-4d27-8e0d-6708a7613aed └─mmcblk0p2 ext4   14.6G /          rootfs 
 ```
 
-:three: get location of disk partition
+:three: make `shared` directory
 
+```
+$ mkdir /mnt/shared
+```
+
+:pushpin: Mount the USB drive to the shared directory 
+
+```
+$ sudo mount /dev/sda1 /mnt/shared/
+```
+
+
+:three: Automatic mounting
+
+:pushpin: get location of disk partition (i.e. locate `UUID`)
 
 ```
 $ sudo blkid
@@ -38,6 +53,12 @@ $ sudo blkid
 /dev/mmcblk0p2: LABEL="rootfs" UUID="3122c401-b3c6-4d27-8e0d-6708a7613aed" TYPE="ext4" PARTUUID="dabd7026-02"
 /dev/mmcblk0: PTUUID="dabd7026" PTTYPE="dos"
 /dev/sda1: LABEL="Lexar" UUID="5A39-0D3D" TYPE="vfat" PARTUUID="1d0db7cb-01"
+```
+
+:pushpin: Edit `/etc/fstab`
+
+```
+UUID=5C24-1453 /mnt/mydisk FSTYPE defaults,auto,users,rw,nofail 0 0
 ```
 
 # References:

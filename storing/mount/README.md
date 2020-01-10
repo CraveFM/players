@@ -42,4 +42,6 @@ $ sudo blkid
 
 # References:
 
-https://stackoverflow.com/questions/11928982/what-is-the-difference-between-vfat-and-fat32-file-systems
+| Link | Description |
+|------|-------------|
+| [vfat](https://stackoverflow.com/questions/11928982/what-is-the-difference-between-vfat-and-fat32-file-systems) | What is the difference between `vfat` and `fat32` file systems |

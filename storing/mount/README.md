@@ -40,3 +40,6 @@ $ sudo blkid
 /dev/sda1: LABEL="Lexar" UUID="5A39-0D3D" TYPE="vfat" PARTUUID="1d0db7cb-01"
 ```
 
+# References:
+
+https://stackoverflow.com/questions/11928982/what-is-the-difference-between-vfat-and-fat32-file-systems

@@ -58,7 +58,7 @@ $ sudo blkid
 :pushpin: Edit `/etc/fstab`
 
 ```
-UUID=5C24-1453 /mnt/shared FSTYPE defaults,auto,users,rw,nofail 0 0
+UUID=5A39-0D3D /mnt/shared FSTYPE defaults,auto,users,rw,nofail 0 0
 ```
 
 # References:

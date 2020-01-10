@@ -55,11 +55,27 @@ $ sudo blkid
 /dev/sda1: LABEL="Lexar" UUID="5A39-0D3D" TYPE="vfat" PARTUUID="1d0db7cb-01"
 ```
 
-:pushpin: Edit `/etc/fstab`
+:pushpin: Edit `/etc/fstab` where `FSTYPE` is `vfat`
 
 ```
-UUID=5A39-0D3D /mnt/shared FSTYPE defaults,auto,users,rw,nofail 0 0
+UUID=5A39-0D3D        /mnt/shared     vfat    defaults,auto,users,rw,nofail,umask=000 0 0
 ```
+
+:five: Check is errors after `reboot`
+
+```
+$ journalctl | grep shared
+Jan 10 14:00:59 isaha kernel: vc-sm: Videocore shared memory driver
+Jan 10 14:01:00 isaha kernel: bcm2835_vc_sm_cma_probe: Videocore shared memory driver
+Jan 10 14:01:01 isaha systemd[1]: Mounting /mnt/shared...
+Jan 10 14:01:01 isaha mount[298]: mount: /mnt/shared: unknown filesystem type 'FSTYPE'.
+Jan 10 14:01:01 isaha systemd[1]: mnt-shared.mount: Mount process exited, code=exited, status=32/n/a
+Jan 10 14:01:01 isaha systemd[1]: mnt-shared.mount: Failed with result 'exit-code'.
+Jan 10 14:01:01 isaha systemd[1]: Failed to mount /mnt/shared.
+Jan 10 14:01:02 isaha udisksd[361]: failed to load module crypto: libbd_crypto.so.2: cannot open shared object file: No such file or directory
+Jan 10 14:01:02 isaha udisksd[361]: failed to load module mdraid: libbd_mdraid.so.2: cannot open shared object file: No such file or directory
+```
+
 
 # References:
 

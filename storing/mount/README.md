@@ -2,7 +2,10 @@
 
 https://www.raspberrypi.org/documentation/configuration/external-storage.md
 
+:one: Plug the device into the USB port
 
+
+:two: List all disks
 
 ```
 $ sudo lsblk -o UUID,NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL,MODEL

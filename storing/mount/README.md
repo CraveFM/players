@@ -45,7 +45,7 @@ $ sudo mount /dev/sda1 /mnt/shared/
 
 :three: Automatic mounting
 
-:pushpin: get location of disk partition (i.e. locate `UUID`)
+:pushpin: get location of disk partition (i.e. locate `UUID` and `TYPE`)
 
 ```
 $ sudo blkid

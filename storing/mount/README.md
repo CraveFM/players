@@ -55,7 +55,7 @@ $ sudo blkid
 /dev/sda1: LABEL="Lexar" UUID="5A39-0D3D" TYPE="vfat" PARTUUID="1d0db7cb-01"
 ```
 
-:pushpin: Edit `/etc/fstab` where `FSTYPE` is `vfat`
+:pushpin: Edit `/etc/fstab` change `UUID` , mount `name` and `FSTYPE` which is `vfat`
 
 ```
 UUID=5A39-0D3D        /mnt/shared     vfat    defaults,auto,users,rw,nofail,umask=000 0 0

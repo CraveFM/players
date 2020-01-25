@@ -14,5 +14,5 @@
 |                                                     |                                          |             |
 | [videogular2-showroom](https://github.com/setrar/videogular2-showroom)        | Videogular2 Player running under @angular/cli  |             |
 
-- [ ] Revisit
+[ ] Revisit
 

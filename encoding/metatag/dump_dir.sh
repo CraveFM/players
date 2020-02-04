@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LOCATION=/e/theindie.biz//shared/mp3_user/repository
+LOCATION=/e/theindie.biz/shared/mp3_user/repository
 
 
 FILES=($LOCATION/*)

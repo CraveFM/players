@@ -55,15 +55,31 @@ $ docker run --interactive --tty --rm \
 ```
 
 ```
-$ docker run --interactive --tty --rm \
-             --mount 'type=volume,volume-driver=rexray/s3fs, src=mycomp-stream-dev, dst=/mycomp-stream-dev' \
-             busybox
+$ docker run \
+   --interactive --tty --rm \
+   --mount 'type=volume,volume-driver=rexray/s3fs,src=mycomp-stream-dev,dst=/mycomp-stream-dev' \
+   busybox
 ```
 
-             --volume-driver=rexray/s3fs -v mycomp-stream-dev:/mycomp-stream-dev \
-
-
-
+```
+# df -h
+Filesystem                Size      Used Available Use% Mounted on
+none                     15.4G      7.2G      8.2G  47% /
+tmpfs                    64.0M         0     64.0M   0% /dev
+tmpfs                   492.0M         0    492.0M   0% /sys/fs/cgroup
+s3fs                    256.0T         0    256.0T   0% /mycomp-stream-dev
+/dev/xvda1               15.4G      7.2G      8.2G  47% /etc/resolv.conf
+/dev/xvda1               15.4G      7.2G      8.2G  47% /etc/hostname
+/dev/xvda1               15.4G      7.2G      8.2G  47% /etc/hosts
+shm                      64.0M         0     64.0M   0% /dev/shm
+tmpfs                   492.0M         0    492.0M   0% /proc/acpi
+tmpfs                    64.0M         0     64.0M   0% /proc/kcore
+tmpfs                    64.0M         0     64.0M   0% /proc/keys
+tmpfs                    64.0M         0     64.0M   0% /proc/timer_list
+tmpfs                    64.0M         0     64.0M   0% /proc/sched_debug
+tmpfs                   492.0M         0    492.0M   0% /proc/scsi
+tmpfs                   492.0M         0    492.0M   0% /sys/firmware
+```
 
 
 https://github.com/rexray/rexray/issues/1172

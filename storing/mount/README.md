@@ -61,7 +61,7 @@ $ sudo blkid
 UUID=5A39-0D3D        /mnt/shared     vfat    defaults,auto,users,rw,nofail,umask=000 0 0
 ```
 
-:five: Check is errors after `reboot`
+:five: Check if errors after `reboot`
 
 ```
 $ journalctl | grep shared

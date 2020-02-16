@@ -54,6 +54,18 @@ $ docker run --interactive --tty --rm \
              busybox
 ```
 
+```
+$ docker run --interactive --tty --rm \
+             --mount 'type=volume,volume-driver=rexray/s3fs, src=mycomp-stream-dev, dst=/mycomp-stream-dev' \
+             busybox
+```
+
+             --volume-driver=rexray/s3fs -v mycomp-stream-dev:/mycomp-stream-dev \
+
+
+
+
+
 https://github.com/rexray/rexray/issues/1172
 
 ```

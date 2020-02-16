@@ -45,6 +45,13 @@ rexray/s3fs:latest   mycomp-stream-qa
 rexray/s3fs:latest   mycomp-stream-prod
 ```
 
+
+```
+$ docker run --interactive --tty --rm \
+             --volume-driver=rexray/s3fs -v mycomp-stream-dev:/mycomp-stream-dev \
+             busybox
+```
+
 https://github.com/rexray/rexray/issues/1172
 
 ```

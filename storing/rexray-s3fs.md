@@ -3,7 +3,7 @@
 ## :one: Point to the `docker-machine` instance
 
 ```
-% eval $(docker-machine env cfm-dev)
+% eval $(docker-machine env MYREMOTE-VM)
 ```
 
 ```

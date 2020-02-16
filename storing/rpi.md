@@ -58,8 +58,8 @@ All required steps are described here: [https://docs.minio.io/docs/s3cmd-with-mi
 
 Just these lines need to be modified:
 
-% vi ~/.s3cfg 
 
+    $ vi ~/.s3cfg 
     access_key = KYNUR02NE46743GT0JDT
     secret_key = rN3cV4o+NclcDSf+IjBCgFoaAonF86TDOem81zMg
     host_base = 192.168.1.10:9000

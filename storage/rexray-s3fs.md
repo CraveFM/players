@@ -1,4 +1,4 @@
-# 🌶️ Using docker plugin `rexray/s3fs`
+# 🌶️ Using docker volume plugin `rexray/s3fs`
 
 ### :warning: This post is to be used against an AWS environment
 

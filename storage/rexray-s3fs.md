@@ -48,10 +48,8 @@ rexray/s3fs:latest   mycomp-stream-prod
 ```
 
 ```
-$ docker run \
-   --interactive --tty --rm \
-   --mount 'type=volume,volume-driver=rexray/s3fs,src=mycomp-stream-dev,dst=/mycomp-stream-dev' \
-   busybox
+$ MOUNT="type=volume,volume-driver=rexray/s3fs,src=mycomp-stream-dev,dst=/mycomp-stream-dev"
+$ docker run --interactive --tty --rm --mount $MOUNT busybox
 ```
 
 ```

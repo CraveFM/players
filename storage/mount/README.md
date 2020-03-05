@@ -48,7 +48,7 @@ $ sudo mount /dev/sda1 /mnt/shared/
 :pushpin: get location of disk partition (i.e. locate `UUID` and `TYPE`)
 
 ```
-$ sudo blkid
+$ blkid
 /dev/mmcblk0p1: LABEL_FATBOOT="boot" LABEL="boot" UUID="3FFE-CDCA" TYPE="vfat" PARTUUID="dabd7026-01"
 /dev/mmcblk0p2: LABEL="rootfs" UUID="3122c401-b3c6-4d27-8e0d-6708a7613aed" TYPE="ext4" PARTUUID="dabd7026-02"
 /dev/mmcblk0: PTUUID="dabd7026" PTTYPE="dos"

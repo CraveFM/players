@@ -4,7 +4,7 @@ https://www.raspberrypi.org/documentation/configuration/external-storage.md
 
 
 
-:one: List all disks
+:one: List all `block storage` disks
 
 :pushpin: Before
 

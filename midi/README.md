@@ -7,3 +7,5 @@ https://mclarenlabs.com/blog/2019/01/15/korg-microkey-air-37-bluetooth-midi-keyb
 https://github.com/lathoub/Arduino-AppleMIDI-Library
 
 https://github.com/ravelox/pimidi
+
+https://www.midi.org/articles-old/rtp-midi-or-midi-over-networks

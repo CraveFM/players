@@ -11,3 +11,6 @@ https://github.com/lathoub/Arduino-AppleMIDI-Library
 https://github.com/ravelox/pimidi
 
 https://www.midi.org/articles-old/rtp-midi-or-midi-over-networks
+
+
+https://github.com/markusschwenk/midieditor

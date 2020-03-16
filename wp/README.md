@@ -22,3 +22,7 @@ $ ssh environment@environment.ssh.wpengine.net
 Access the SSH page
 
 https://my.wpengine.com/ssh_keys
+
+# Flywheel (cheaper)
+
+https://getflywheel.com/pricing/

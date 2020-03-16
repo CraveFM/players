@@ -14,3 +14,7 @@ https://wpengine.com/support/ssh-keys-for-shell-access/#sshconfig
 ```
 $ ssh-keygen -t rsa -b 4096 -f ~/.ssh/wpengine_rsa
 ```
+
+Access the SSH page
+
+https://my.wpengine.com/ssh_keys

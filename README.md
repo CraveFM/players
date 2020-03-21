@@ -1,4 +1,4 @@
-
+# [Adaptive Bitrate Streaming](https://en.wikipedia.org/wiki/Adaptive_bitrate_streaming)
 
 # TDL
 

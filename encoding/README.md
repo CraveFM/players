@@ -85,4 +85,7 @@ $ ffmpeg -i https://oo.com/ddd/ddd//video.m3u8 -acodec copy -bsf:a aac_adtstoasc
 
 https://hlsbook.net/how-to-encrypt-hls-video-with-ffmpeg
 
+--- ffmpeg JS
+
+https://github.com/Kagami/ffmpeg.js/
 

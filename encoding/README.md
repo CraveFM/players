@@ -89,3 +89,5 @@ https://hlsbook.net/how-to-encrypt-hls-video-with-ffmpeg
 
 https://github.com/Kagami/ffmpeg.js/
 
+https://github.com/ffmpegwasm/ffmpeg.wasm
+

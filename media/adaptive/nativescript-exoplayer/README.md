@@ -49,4 +49,9 @@ registerElement("exoplayer", () => require("nativescript-exoplayer").Video);
 % ns preview
 ```
 
-:x: https://nativescript.org/blog/nativescript-7-for-plugin-authors/
+## :x: Upgrade to NativeScript 7.0 failed due to the exoplayer plugin 
+
+:bookmark: https://nativescript.org/blog/nativescript-7-for-plugin-authors/
+
+
+

@@ -40,11 +40,13 @@ registerElement("exoplayer", () => require("nativescript-exoplayer").Video);
 :pushpin: Using local `Playground`
 
 ```
-% tns run
+% ns run
 ```
 
 :pushpin: Using Preview
 
 ```
-% tns preview
+% ns preview
 ```
+
+:x: https://nativescript.org/blog/nativescript-7-for-plugin-authors/

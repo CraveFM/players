@@ -10,7 +10,7 @@
 :two: Add the [exoplayer](https://github.com/google/ExoPlayer) plugin
 
 ```
-% tns plugin add nativescript-exoplayer
+% ns plugin add nativescript-exoplayer
 ```
 
 :three: Add some code

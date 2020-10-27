@@ -4,7 +4,7 @@
 :one: Create the blank `Angular` `Nativescript` Project
 
 ```
-% tns create ns-blank-ng --template tns-template-blank-ng && cd ns-blank-ng
+% ns create ns-blank-ng --template @nativescript/template-blank-ng && cd ns-blank-ng
 ```
 
 :two: Add the [exoplayer](https://github.com/google/ExoPlayer) plugin

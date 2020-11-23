@@ -7,7 +7,7 @@
 % ns create ns-blank-ng --template @nativescript/template-blank-ng && cd ns-blank-ng
 ```
 
-:two: Add the [exoplayer](https://github.com/google/ExoPlayer) plugin
+:two: Add the [exoplayer](https://www.npmjs.com/package/@nstudio/nativescript-exoplayer) plugin
 
 ```
 % ns plugin add nativescript-exoplayer
@@ -19,9 +19,9 @@
 
 ```typescript
 // somewhere at top of your component or bootstrap file
-import {registerElement} from "nativescript-angular/element-registry";
-registerElement("exoplayer", () => require("nativescript-exoplayer").Video);
-// documentation: https://docs.nativescript.org/angular/plugins/angular-third-party.html#simple-elements
+import { registerElement } from "@nativescript/angular";
+import { Video } from '@nstudio/nativescript-exoplayer';
+registerElement("Video", () => Video);
 ```
 
 :pushpin: Add the below snippet to the `home` template file `home.component.html`
@@ -29,10 +29,10 @@ registerElement("exoplayer", () => require("nativescript-exoplayer").Video);
 
 ```html
     <!-- Add your page content here -->
-    <exoplayer
-            src="https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
-            autoplay="true"
-            height="300"></exoplayer>
+    <Video
+    src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
+    autoplay="true"
+    height="300"></Video>
 ```
 
 :four: Run the app
@@ -49,9 +49,25 @@ registerElement("exoplayer", () => require("nativescript-exoplayer").Video);
 % ns preview
 ```
 
-## :x: Upgrade to NativeScript 7.0 failed due to the exoplayer plugin 
+## :x: Custom
 
-:bookmark: https://nativescript.org/blog/nativescript-7-for-plugin-authors/
+<<<<<<< HEAD
+:mobile: Android
+
+Open up the manifest file `AndroidManifest.xml` and add by the following in `<application>` parameter tag:
+
+:keyboard: Dans [VSC](https://code.visualstudio.com/) Ouvrir un fichier -> `Ctrl p` :computer: Windows -> `⌘ p` :apple: MacOS
+
+
+```xml
+	<application
+		...
+		android:usesCleartextTraffic="true">
+```
+
+# References:
+
+https://developer.android.com/training/articles/security-config
 
 
 

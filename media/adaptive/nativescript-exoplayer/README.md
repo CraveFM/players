@@ -51,7 +51,6 @@ registerElement("Video", () => Video);
 
 ## :x: Custom
 
-<<<<<<< HEAD
 :mobile: Android
 
 Open up the manifest file `AndroidManifest.xml` and add by the following in `<application>` parameter tag:

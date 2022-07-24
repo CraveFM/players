@@ -25,27 +25,27 @@ Not installed
 
 # :two: Roll
 
-* go to `scripts` folder and generate the streaming files that will be located under `stream` folder
+- [ ] go to `scripts` folder and generate the streaming files that will be located under `stream` folder
 
 ```
-$ cd scripts; sh encode-all.sh
-```
-
-
-* Run the python server
-
-```
-$ python PythonServer.py
+cd scripts; sh encode-all.sh
 ```
 
 
-* Test using the below URL where IP is your host i.e. `localhost` or `192.168.1.100`
+- [ ] Run the python server
+
+```
+python PythonServer.py
+```
+
+
+- [ ] Test using the below URL where IP is your host i.e. `localhost` or `192.168.1.100`
 
 ```
 http://<IP>:8000
 ```
 
-*  select any of these html files
+- [ ]  select any of these html files
 
 |:hash:| Platform        | [Raw Dash](scripts/raw-dash.html) | [Raw Hls](scripts/raw-hls.html) | [MES Dash](scripts/mes-dash.html)| [MES Hls](scripts/mes-hls.html) |
 |------|-----------------|-----------------------------------|---------------------------------|----------------------------------------|---------------------------------|

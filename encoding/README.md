@@ -85,9 +85,13 @@ $ ffmpeg -i https://oo.com/ddd/ddd//video.m3u8 -acodec copy -bsf:a aac_adtstoasc
 
 https://hlsbook.net/how-to-encrypt-hls-video-with-ffmpeg
 
---- ffmpeg JS
+:round_pushpin: ffmpeg JS
 
 https://github.com/Kagami/ffmpeg.js/
 
 https://github.com/ffmpegwasm/ffmpeg.wasm
+
+
+
+- [ ] [How to Serve HLS Video from an S3 Bucket](https://hlsbook.net/how-to-serve-hls-video-from-an-s3-bucket)
 

@@ -83,15 +83,15 @@ https://stackoverflow.com/questions/33108105/converting-an-hls-m3u8-to-mp4
 $ ffmpeg -i https://oo.com/ddd/ddd//video.m3u8 -acodec copy -bsf:a aac_adtstoasc -vcodec copy out.mp4
 ```
 
-https://hlsbook.net/how-to-encrypt-hls-video-with-ffmpeg
 
 :round_pushpin: ffmpeg JS
 
-https://github.com/Kagami/ffmpeg.js/
+- [ ] [Port of FFmpeg with Emscripten ](https://github.com/Kagami/ffmpeg.js)
+- [ ] [FFmpeg for browser and node, powered by WebAssembly ](https://github.com/ffmpegwasm/ffmpeg.wasm)
 
-https://github.com/ffmpegwasm/ffmpeg.wasm
+:round_pushpin: Hosting on S3
 
+- [ ] [HLS Book - How to Serve HLS Video from an S3 Bucket](https://hlsbook.net/how-to-serve-hls-video-from-an-s3-bucket)
+- [ ] [HLS Book - How to Encrypt Video for HLS](https://hlsbook.net/how-to-encrypt-hls-video-with-ffmpeg)
 
-
-- [ ] [How to Serve HLS Video from an S3 Bucket](https://hlsbook.net/how-to-serve-hls-video-from-an-s3-bucket)
 

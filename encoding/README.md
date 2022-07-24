@@ -80,7 +80,7 @@ https://medium.com/pallycon/how-netflix-protects-contents-part-1-a40508ed0001
 https://stackoverflow.com/questions/33108105/converting-an-hls-m3u8-to-mp4
 
 ```
-$ ffmpeg -i https://oo.com/ddd/ddd//video.m3u8 -acodec copy -bsf:a aac_adtstoasc -vcodec copy out.mp4
+ffmpeg -i https://oo.com/ddd/ddd//video.m3u8 -acodec copy -bsf:a aac_adtstoasc -vcodec copy out.mp4
 ```
 
 

@@ -68,15 +68,10 @@ https://caniuse.com/#feat=mediasource
 
 ## Documentation to read
 
-https://docs.peer5.com/guides/production-ready-hls-vod/
-
-
-https://www.exoscale.com/syslog/self-hosted-videos/
-
-https://askubuntu.com/questions/226773/how-to-read-mp3-tags-in-shell
-
-https://medium.com/pallycon/how-netflix-protects-contents-part-1-a40508ed0001
-
+- [ ] [Creating A Production Ready Multi Bitrate HLS VOD stream](https://docs.peer5.com/guides/production-ready-hls-vod)
+- [ ] [Self-hosting videos with HLS](https://www.exoscale.com/syslog/self-hosted-videos)
+- [ ] [How to read mp3 tags in shell?](https://askubuntu.com/questions/226773/how-to-read-mp3-tags-in-shell)
+- [ ] [How Netflix protects its content — Part 1](https://medium.com/pallycon/how-netflix-protects-contents-part-1-a40508ed0001)
 - [ ] [Converting an HLS (m3u8) to MP4](https://stackoverflow.com/questions/33108105/converting-an-hls-m3u8-to-mp4)
 
 ```
